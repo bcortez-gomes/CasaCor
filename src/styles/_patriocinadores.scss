@@ -1,0 +1,12 @@
+@use 'variables';
+
+.wrap-patrocinio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 34px;
+
+    img{
+        cursor: pointer;
+    }
+}

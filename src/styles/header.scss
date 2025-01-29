@@ -1,0 +1,27 @@
+@use 'variables';
+
+.head {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 16px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    padding-left: 17px;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.logo{
+    font-size: 36px;
+}

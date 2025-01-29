@@ -1,0 +1,38 @@
+@use 'variables';
+
+.ambientes {
+    background-image: url(../images/section1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 986px;
+    margin-top: 34px;
+    height: 470px;
+
+    &__paragrafo1{
+        margin-left: 671px;
+        max-width: 267px;
+        padding-top: 106px;
+    }
+
+    &__paragrafo2{
+        margin-left: 671px;
+        max-width: 267px;
+        padding-top: 19px;
+    }
+
+    &__paragrafo3{
+        margin-left: 671px;
+        max-width: 154px;
+        padding-top: 85px;
+    }
+
+    &__ref{
+        margin-left: 915px;
+        position: relative;
+        z-index: 1;
+        top: -42px;
+        font-size: 30px;
+        width: 20px;
+    }
+}

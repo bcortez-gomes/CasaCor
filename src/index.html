@@ -4,10 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CasaCor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    
+    <div class="container navbar">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <p><strong>CASA</strong>COR</p>
+                </div>
+                <div class="items">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Ambientes</a>
+                            </li>
+                            <li>
+                                <a href="#">Profissionais</a>
+                            </li>
+                            <li>
+                                <a href="#">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#">Patrocínio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <p class="hero__titulo1">
+                Fresh
+            </p>
+            <p class="hero__titulo2">
+                Contemporary
+            </p>
+            <p class="hero__span" id="contador"></p>
+            <div class="hero__infos-bar">
+                <ul class="hero__infos-bar__infos">
+                    <li class="hero__infos-bar__infos__item">
+                        <p class="hero__infos-bar__infos__item__titulo"><b>LOCALIZAÇÃO</b></p>
+                        <p class="hero__infos-bar__infos__item__subtitulo">
+                            Allians Parque<br>São Paulo
+                        </p>
+                    </li>
+                    <li class="hero__infos-bar__infos__item">
+                        <p class="hero__infos-bar__infos__item__titulo"><b>VALORES</b></p>
+                        <p class="hero__infos-bar__infos__item__subtitulo">
+                            A partir<br>de R$120,00
+                        </p>
+                    </li>
+                    <li class="hero__infos-bar__infos__item">
+                        <p class="hero__infos-bar__infos__item__titulo"><b>QUANDO</b></p>
+                        <p class="hero__infos-bar__infos__item__subtitulo">
+                            12/12<br>até 19/12
+                        </p>
+                    </li>
+                    <a href="#" class="hero__infos-bar__button">
+                        Garanta o<br>seu ingresso!
+                    </a>
+                </ul>
+            </div>
+            <div class="img-animada">
+                <img src="./images/circulo-casacor.png" alt="circulo escrito CASACOR 2025">
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="ambientes">
+            <p class="ambientes__paragrafo1">
+                Com ambientes que celebram a comtemporaneidade de forma fluída, leve e fresca.
+            </p>
+            <p class="ambientes__paragrafo2">
+                <b>Nossa galeria está repleta de ambientes pensados pelos profissionais mais relevantes para o evento.</b>
+            </p>
+            <div class="paragrafoDuplo">
+            <p class="ambientes__paragrafo3">
+                Clique e confira o que te aguarda na <b>CASA</b>COR <b>2025</b>!
+                </p>
+                <a href="#" class="ambientes__ref"><b></b></a>
+            </div>
+        </section>
+        <section class="infos">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="infos__blocos">
+                <h1 class="infos__titulos">1200+</h1>
+                <p class="infos__conteudo">Produtos de parceiros & lojas credenciadas</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="infos__blocos">
+                <h1 class="infos__titulos">200+</h1>
+                <p class="infos__conteudo">Projetos que esbajam autencidade, sotisficação e fascínio</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="infos__blocos">
+                <h1 class="infos__titulos">75+</h1>
+                <p class="infos__conteudo">Designers, arquitetos e paisagistas trabalhandoem conjunto</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="infos__blocos">
+                <h1 class="infos__titulos">1°</h1>
+                <p class="infos__conteudo">Evento que possui espaço dedicado apenas para projetos de paisagismo</p>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="6000" class="profissionais">
+            <div data-aos="fade-up"  data-aos-duration="6000" class="profissionais__blocos">
+                <img class="profissionais__blocos__imagem" src="./images/prof-1.png" alt="profissional MONIK">
+                <p class="profissionais__blocos__nome">MONIK</p>
+                <p class="profissionais__blocos__descricao">Arquitetura e Interiores</p>
+            </div>
+            <div data-aos="fade-up"  data-aos-duration="6000" class="profissionais__blocos">
+                <img class="profissionais__blocos__imagem" src="./images/prof-2.png" alt="profissional MONIK">
+                <p class="profissionais__blocos__nome">FRAG</p>
+                <p class="profissionais__blocos__descricao">Arquitetura</p>
+            </div>
+            <div data-aos="fade-up"  data-aos-duration="6000" class="profissionais__blocos">
+                <img class="profissionais__blocos__imagem" src="./images/prof-3.png" alt="profissional MONIK">
+                <p class="profissionais__blocos__nome">MAY SAMPAIO</p>
+                <p class="profissionais__blocos__descricao">Escritório de Interiores</p>
+            </div>
+            <div data-aos="fade-up"  data-aos-duration="6000" class="profissionais__blocos">
+                <img class="profissionais__blocos__imagem" src="./images/prof-4.png" alt="profissional MONIK">
+                <p class="profissionais__blocos__nome">SALLES</p>
+                <p class="profissionais__blocos__descricao">Design e Paisagismo</p>
+            </div>
+        </section>
+        <section class="projetos">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="wrap-projetos">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="./images/img1.png" alt="sala de estar em tons de bege claros, espaçosa e com muita leveza" class="carousel-item">
+                        <img src="./images/img2.png" alt="divisa entre sala de estar com área externa, um espaço amplo e com muita personalidade" class="carousel-item">
+                        <img src="./images/img3.png" alt="varanda com cores mais fechadas esbanjando cores refrescantes" class="carousel-item">
+                    </div>
+                    <button class="carousel-button prev">
+                        <img src="./images/seta1.png" alt="anterior">
+                    </button>
+                    <button class="carousel-button next">
+                        <img src="./images/seta2.png" alt="próximo">
+                    </button>
+                    <div class="carousel-indicators">
+                        <button data-slide="0" class="active"></button>
+                        <button data-slide="1"></button>
+                        <button data-slide="2"></button>
+                    </div>
+                </div>
+                <div class="modal">
+                    <h1 class="modal__title">MODERN STYLE TIMELESS CHARM</h1>
+                    <p class="modal__subtitle">ELEGANCE • TIMELESS</p>
+                    <p class="modal__content">O portifólio dos nossos parceiros do evento está repleto de inovação, banhados em tendências e muito conhecimento.<br>Todos com entregas sólidas<br>que se destacam no mercado.</p>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="divisoria">
+            <img id="" src="./images/divisoria.png" alt="divisória patrocínios">
+        </section>
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="patriocinadores">
+            <div class="wrap-patrocinio">
+                <div class="wrap-patrocinio__patriocinador-1">
+                    <img class="wrap-patrocinio__patriocinador-1__img" src="./images/patriocinador-1.png" alt="DECA logo">
+                </div>
+                <div class="wrap-patrocinio__patriocinador-1">
+                    <img class="wrap-patrocinio__patriocinador-2__img" src="./images/patriocinador-2.png" alt="Coral Logo">
+                </div>
+                <div class="wrap-patrocinio__patriocinador-1">
+                    <img class="wrap-patrocinio__patriocinador-3__img" src="./images/patriocinador-3.png" alt="Banco BRB Logo">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__esquerda">
+                <p class="footer__esquerda__mini-logo"><b>CASA</b>COR</p>
+                <p class="footer__esquerda__slogan">A maior e mais completa plataforma de arquitetura, design de interiores e paisagismo das Américas</p>
+            </div>
+            <div class="footer__direita">
+                <p>SIGA</p>
+                <img src="./images/instagram.png" alt="Intagram logo">
+                <img src="./images/facebook.png" alt="Facebook logo">
+                <img src="./images/X.png" alt="X logo">
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

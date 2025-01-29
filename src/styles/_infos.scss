@@ -1,0 +1,17 @@
+@use 'variables';
+@use 'mixins';
+
+.infos{
+    margin: 34px 34px 34px 34px;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+
+    &__titulos{
+        @include mixins.titulosSectionInfos;
+    }
+
+    &__conteudo{
+        @include mixins.subtitulosSectionInfos;
+    }
+}

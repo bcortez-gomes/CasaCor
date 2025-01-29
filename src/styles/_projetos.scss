@@ -1,0 +1,46 @@
+@use 'variables';
+
+.projetos{
+    padding-bottom: 34px;
+}
+
+.wrap-projetos {
+    display: flex;
+    gap: 33px;
+}
+
+.carousel {
+    flex: 1;
+    max-width: 463px;
+    margin: 0 !important;
+}
+
+.modal {
+    flex: 1;
+    max-width: 463px;
+    background-image: url(../images/modal-projetos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 390px;
+
+    &__title{
+        width: 379px;
+        padding-top: 80px;
+        padding-left: 30px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    &__subtitle{
+        font-weight: bold;
+        padding-left: 30px;
+        padding-top: 11px;
+    }
+
+    &__content{
+        width: 401px;
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,87 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'mixins';
+@use 'ambientes';
+@use 'infos';
+@use 'profissionais';
+@use 'projetos'; 
+@use 'patriocinadores';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, serif;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    width: 960px;
+    margin-left: 32px;
+    margin-right: 32px;
+    justify-self: center;
+}
+
+.carousel {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    pointer-events: none;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-button.prev {
+    left: 29px;
+}
+
+.carousel-button.next {
+    right: 29px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.459);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+.divisoria {
+    padding-bottom: 34px;
+}

@@ -1,0 +1,16 @@
+@use 'variables';
+
+@mixin recuoEsqHero {
+    margin-left: 44px;
+}
+
+@mixin titulosSectionInfos{
+    color: variables.$colorSalmao;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin subtitulosSectionInfos{
+    font-size: 14px;
+    width: 202px;
+}

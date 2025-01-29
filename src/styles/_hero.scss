@@ -1,0 +1,94 @@
+@use 'variables';
+@use 'mixins';
+
+.hero {
+    background-image: url(../images/hero-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 470px;
+
+    &__titulo1{
+        @include mixins.recuoEsqHero;
+        padding-top: 39px;
+        font-size: 64px;
+        color: variables.$colorBege;
+    }
+
+    &__titulo2{
+        @include mixins.recuoEsqHero;
+        font-size: 64px;
+        font-weight: bold;
+        color: variables.$colorSalmao;
+    }
+
+    &__span{
+        @include mixins.recuoEsqHero;
+        padding-top: 58px;
+        padding-bottom: 65px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    &__infos-bar{
+        @include mixins.recuoEsqHero;
+        padding: 15px 15px 18px 18px;
+        background-color: rgba($color: #d9d9d9, $alpha: 0.10);
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: space-between;
+        margin-right: 328px;
+        border-radius: 20px;
+
+        &__infos{
+            display: flex;
+            gap: 40px;
+
+            &__item{
+                &__titulo{
+                    b{
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: variables.$colorBege;
+                    }
+                }
+            }
+        }
+
+        &__button{
+            background-color: #000000;
+            border-radius: 20px;
+            color: variables.$colorBranco;
+            font-weight: bold;
+            font-size: 18px;  
+            text-align: center;
+            padding: 9px 8px 13px 8px;
+        }
+    }
+
+    .img-animada{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 48%;
+        right: 35px;
+        transform: translate(-50%, -50%);
+        animation: img-spin 15s linear infinite;
+
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @keyframes img-spin {
+        from {
+            transform: rotate(0deg);
+        }
+    to {
+        transform: rotate(360deg);
+    }
+}
+}
+
